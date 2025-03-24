@@ -1,4 +1,4 @@
-package functionalProgDemo;
+package functionalDemo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +14,8 @@ public class Imperative {
                 new Person("Eric Misterer", Gender.MALE)
         );
 
+//        Get and Print all females
+
         List<Person> females = new ArrayList<>();
 
         for (Person person : people) {
@@ -26,6 +28,5 @@ public class Imperative {
             System.out.println(person.getName());
         }
 
-//                people.stream().filter(p -> p.gender == Gender.FEMALE).collect(Collectors.toList()); // <1>
     }
 }

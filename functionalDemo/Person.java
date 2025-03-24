@@ -1,4 +1,4 @@
-package functionalProgDemo;
+package functionalDemo;
 //    Person Class definition
 public class Person {
     private final String name;

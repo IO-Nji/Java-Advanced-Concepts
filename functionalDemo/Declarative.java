@@ -1,4 +1,4 @@
-package functionalProgDemo;
+package functionalDemo;
 
 import java.util.List;
 
@@ -12,14 +12,12 @@ public class Declarative {
                 new Person("Susan Twoshoes", Gender.FEMALE),
                 new Person("Eric Misterer", Gender.MALE)
         );
+
+//        Get and Print all females
         people.stream()
                 .filter(p -> p.getGender() == Gender.FEMALE)
                 .forEach(System.out::println);
 
-
-//        List<declarative.Main.Person> females =
-//                .collect(Collectors.toList());
-//        females.forEach(System.out::println);
     }
 
 

@@ -1,4 +1,4 @@
-package functionalProgDemo;
+package functionalDemo;
 
 
 public enum Gender {
