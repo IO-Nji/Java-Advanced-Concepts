@@ -3,6 +3,8 @@ package alarmClock;
 import java.awt.*;
 import java.time.LocalTime;
 
+import static java.lang.Thread.sleep;
+
 public class AlarmClock implements Runnable {
 
     private final LocalTime alarmTime;
@@ -16,7 +18,7 @@ public class AlarmClock implements Runnable {
 
         while (LocalTime.now().isBefore(alarmTime)) {
             try {
-                Thread.sleep(1000);
+                sleep(1000);
                 LocalTime now = LocalTime.now();
 
                 System.out.printf("\r%02d:%02d:%02d",
