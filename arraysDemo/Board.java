@@ -1,13 +1,11 @@
 package arraysDemo;
 
 public class Board {
-     boolean[][] grid = new boolean[6][6];
+     boolean[][] grid;
 
-     public Board() {
+    public Board() {
 
-//         grid[0][0] = false;
-
-         grid = new boolean[][] {
+         this.grid = new boolean[][] {
                  {false, true, true,false, true, true},
                  {true, false, true, true, false, true},
                  {true, true, false, true, true, false},
